@@ -45,6 +45,7 @@
       z-index: 2;
       text-align: center;
       padding: 80px 20px;
+      animation: fadeIn 2s ease forwards;
     }
 
     header img {
@@ -79,6 +80,7 @@
       position: relative;
       text-align: center;
       padding: 40px 20px;
+      animation: fadeIn 3s ease forwards;
     }
 
     .content h2 {
@@ -113,6 +115,11 @@
       100% { background-position: 0% 50%; }
     }
 
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     footer {
       margin-top: 60px;
       background: rgba(0,0,0,0.5);
@@ -141,11 +148,11 @@
     <p>Vive una experiencia única en el servidor más colombiano, con estilo, respeto y full flow.</p>
 
     <a href="mailto:sebassonypc@gmail.com" class="btn">📧 Contactar por Correo</a>
-    <a href="#" class="btn">💬 Discord: Próximamente</a>
+    <a href="https://discord.gg/y7pyYdtQsc" target="_blank" class="btn">💬 Unirse al Discord</a>
   </div>
 
   <footer>
-    © 2025 <span>Proyecto Poblado Roleplay</span> | Dueño  Salsita 🌀
+    © 2025 <span>Proyecto Poblado Roleplay</span> | Dueño Salsita 🌀
   </footer>
 </body>
 </html>
