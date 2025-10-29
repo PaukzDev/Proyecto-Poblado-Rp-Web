@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Poblado Roleplay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #001f3f, #111, #ffcc00);
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Fondo de luces */
+    .neon-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at top left, rgba(255,0,0,0.3), transparent 60%),
+                  radial-gradient(circle at bottom right, rgba(0,0,255,0.3), transparent 60%),
+                  radial-gradient(circle at center, rgba(255,255,0,0.3), transparent 60%);
+      z-index: 0;
+      animation: pulse 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      100% { opacity: 1; }
+    }
+
+    header {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header img {
+      width: 250px;
+      filter: drop-shadow(0 0 15px #ffcc00);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ffcc00;
+      margin-top: 15px;
+      text-shadow: 0 0 15px #ff0000, 0 0 25px #0055ff;
+    }
+
+    .palmera {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 2rem;
+      filter: drop-shadow(0 0 8px #00ffcc);
+    }
+
+    .content {
+      z-index: 2;
+      position: relative;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      margin: 10px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(45deg, #ff0000, #ffcc00, #0055ff);
+      background-size: 300% 300%;
+      animation: gradientMove 6s ease infinite;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px #ffcc00;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    footer {
+      margin-top: 60px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    footer span {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <div class="neon-bg"></div>
+
+  <header>
+    <img src="logo.png" alt="Logo Proyecto Poblado Roleplay" />
+    <div class="palmera">🌴</div>
+    <h1>Proyecto Poblado Roleplay</h1>
+  </header>
+
+  <div class="content">
+    <h2>Bienvenido a la comunidad más 🔥 de MTA Roleplay</h2>
+    <p>Vive una experiencia única en el servidor más colombiano, con estilo, respeto y full flow.</p>
+
+    <a href="mailto:sebassonypc@gmail.com" class="btn">📧 Contactar por Correo</a>
+    <a href="#" class="btn">💬 Discord: Próximamente</a>
+  </div>
+
+  <footer>
+    © 2025 <span>Proyecto Poblado Roleplay</span> | Dueño  Salsita 🌀
+  </footer>
+</body>
+</html>
